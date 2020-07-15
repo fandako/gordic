@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Gordic – table</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+  <!-- jquery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <!-- notify.js for notifications -->
+  <script src="js/notify.min.js"></script>
+
+  <!-- jquery ui (datepicker) -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- form validation jquery plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+</head>
+
+<body>
+  <!-- TOP NAVIGATION -->
+  <div id="navigation">
+    <nav class="container">
+      <div class="row">
+        <h1>Gordic – table</h1>
+        <div>
+          <a href="#"><i class="fas fa-user-circle"></i>Profile</a>
+          <a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="content">
+
+    <!-- table -->
+    <div id="table" class="tableWrapper">
+      <div class="table container">
+        <div class="header row">
+          <div class="col-lg-3">ID</div>
+          <div class="col-lg-3">First name</div>
+          <div class="col-lg-3">Last name</div>
+          <div class="col-lg-3">Avatar</div>
+        </div>
+        <div class="noItems item row">No items</div>
+      </div>
+      <ul class="pagination container">
+        <li class="page-item"><a class="page-link first" href="#">First</a></li>
+        <li class="page-item"><a class="page-link prev" href="#">Previous</a></li>
+        <li class="page-item">
+          <span class="pageBeforeText">Page</span>
+          <input type="number" name="page" />
+          <span class="pageAfterText">of <span class="maxPage"></span></span>
+        </li>
+        <li class="page-item"><a class="page-link next" href="#">Next</a></li>
+        <li class="page-item"><a class="page-link last" href="#">Last</a></li>
+      </ul>
+    </div>
+
+    <!-- table item template -->
+    <div id="itemTemplate" class="item row">
+      <div data-name="_id" class="col-lg-3"></div>
+      <div data-name="first_name" class="col-lg-3"></div>
+      <div data-name="last_name" class="col-lg-3"></div>
+      <div data-name="avatar" class="col-lg-3">
+        <img class="avatar" src="" />
+      </div>
+    </div>
+
+    <!-- item detail template -->
+    <div id="itemDetailTemplate" class="itemDetail">
+      <div>
+        <label>E-mail:</label>
+        <span data-name="email"></span>
+      </div>
+      <div>
+        <label>Company name:</label>
+        <span data-name="company_0_name"></span>
+      </div>
+      <div>
+        <label>Company country:</label>
+        <span data-name="company_0_country"></span>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" class="container">
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

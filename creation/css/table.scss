@@ -1,0 +1,37 @@
+@use 'vars';
+
+.table {
+    border: 1px solid vars.$light-stroke;
+    margin-top: 1em;
+
+    .header {
+        background: vars.$secondary-color;
+        color: vars.$text-dark;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    .header, .item {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .item:nth-child(even){
+        background: vars.$text-light;
+    }
+    
+    .item:nth-child(odd) {
+        background: /*vars.$secondary-color*/#e6e6e6;
+    }
+
+    .noItems {
+        justify-content: center;
+    }
+}
+
+#itemTemplate {
+    display: none;
+}
+

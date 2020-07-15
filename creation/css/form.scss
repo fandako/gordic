@@ -1,0 +1,61 @@
+@use 'vars';
+
+#addForm {
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 0.5em;
+    }
+
+    button[type="submit"] {
+        display: block;
+        background: vars.$secondary-color;
+        border: none;
+        font-weight: bold;
+        padding: 0.5em 0.1em;
+        margin-top: 1em;
+    }
+
+    button[type="submit"]:hover {
+        background: vars.$primary-color;
+        color: vars.$text-light;
+        cursor: pointer;
+    }
+
+    /*input[name="submit"]:hover {
+        background: #0071BC;
+        color: white;
+        cursor: pointer;
+    }*/
+    
+    input[name="date"], .itemDatepicker {
+        background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    }
+    
+    .itemDatepicker {
+        max-width: 100%;
+    }
+    
+    input, select, button {
+        min-width: 200px;
+        border-radius: 4px;
+        padding: 0.3em 0.4em;
+        border: 1px solid vars.$light-stroke;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        min-width: auto;
+    }
+
+    label.error {
+        color: red;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    label .required {
+        font-weight: normal;
+        opacity: 0.6;
+    }
+}

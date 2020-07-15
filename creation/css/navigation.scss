@@ -1,0 +1,29 @@
+@use 'vars';
+
+#navigation {
+    background: vars.$primary-color;
+    color: vars.$text-light;
+    min-height: 4em;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 4em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    a {
+        color: vars.$text-light;
+        margin-left: 15px;
+
+        .fas {
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+    }
+}

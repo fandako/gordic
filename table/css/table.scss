@@ -1,0 +1,72 @@
+@use 'vars';
+
+.table {
+    border: 1px solid vars.$light-stroke;
+    margin-top: 1em;
+
+    .header {
+        background: vars.$text-dark;
+        color: vars.$text-light;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    .header, .item {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .item:nth-child(even){
+        background: vars.$text-light;
+    }
+    
+    .item:nth-child(odd) {
+        background: /*vars.$secondary-color*/#e6e6e6;
+    }
+
+    .noItems {
+        justify-content: center;
+    }
+
+    img.avatar {
+        max-width: 30px;
+    }
+
+    .itemDetail {
+        border-top: 1px solid vars.$text-dark;
+        min-width: 100%;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        label {
+            margin-right: 1em;
+            font-weight: bold;
+        }
+    }
+}
+
+#itemTemplate, #itemDetailTemplate {
+    display: none;
+}
+
+.tableWrapper{
+    .pagination {
+        justify-content: center;
+        align-items: center;
+
+        input {
+            max-width: 3em;
+        }
+
+        .pageAfterText, .pageBeforeText {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+    }
+}
+

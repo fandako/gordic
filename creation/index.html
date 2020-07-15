@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Gordic – record creation</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+  <!-- jquery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <!-- notify.js for notifications -->
+  <script src="js/notify.min.js"></script>
+
+  <!-- jquery ui (datepicker) -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- form validation jquery plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+
+  <!-- definition for form validation -->
+  <script src="js/form.js"></script>
+
+</head>
+
+<body>
+  <!-- TOP NAVIGATION -->
+  <div id="navigation">
+    <nav class="container">
+      <div class="row">
+        <h1>Gordic – record creation</h1>
+        <div>
+          <a href="#"><i class="fas fa-user-circle"></i>Profile</a>
+          <a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="content">
+
+    <!-- table -->
+    <div id="table" class="table container">
+      <div class="header row">
+        <div class="col-lg-2">First and last name</div>
+        <div class="col-lg-2">E-mail</div>
+        <div class="col-lg-2">Date of birth</div>
+        <div class="col-lg-1">Sex</div>
+        <div class="col-lg-1">Education</div>
+        <div class="col-lg-4">Hobbies</div>
+      </div>
+      <div class="noItems item row">No items</div>
+    </div>
+
+    <!-- table item template -->
+    <div id="itemTemplate" class="item row">
+      <div data-name="name" class="col-lg-2"></div>
+      <div data-name="email" class="col-lg-2"></div>
+      <div data-name="date" class="col-lg-2"></div>
+      <div data-name="gender" class="col-lg-1"></div>
+      <div data-name="education" class="col-lg-1"></div>
+      <div data-name="hobbies" class="col-lg-4"></div>
+    </div>
+
+    <!-- form -->
+    <div id="addForm" class="container">
+
+      <form id="addRecordForm" action="">
+        <div class="formItem">
+          <label for="name">
+            First and last name: <span class="required">*(required)</span>
+          </label>
+
+          <input name="name" type="text" required>
+        </div>
+
+        <div class="formItem">
+          <label for="email">
+            E-mail: <span class="required">*(required)</span>
+          </label>
+
+          <input name="email" type="email" required>
+        </div>
+
+        <div class="formItem">
+          <label for="date">
+            Date of birth: <span class="required">*(required)</span>
+          </label>
+
+          <input class="dateInput" name="date" type="text" required>
+        </div>
+
+        <div class="formItem">
+          <label>
+            Sex: <span class="required">*(required)</span>
+          </label>
+
+          <div>
+            <input type="radio" id="male" name="gender" value="M" required>
+            <span class="radioLabel">Male</span>
+          </div>
+
+          <div>
+            <input type="radio" id="female" name="gender" value="F">
+            <span class="radioLabel">Female</span>
+          </div>
+        </div>
+
+        <div class="formItem">
+          <label for="education">
+            Education: <span class="required">*(required)</span>
+          </label>
+
+          <select id='education' name="education" type="text" required>
+            <option value="" disabled selected>Select your education</option>
+          </select>
+        </div>
+
+        <div class="formItem">
+          <label>Hobbies:</label>
+
+          <div>
+            <input name="hobbies" type="checkbox" value="lorem" />
+            <span class="radioLabel">Lorem</span>
+          </div>
+
+          <div>
+            <input name="hobbies" type="checkbox" value="ipsum" />
+            <span class="radioLabel">Ipsum</span>
+          </div>
+
+          <div>
+            <input name="hobbies" type="checkbox" value="dolor" />
+            <span class="radioLabel">Dolor</span>
+          </div>
+
+          <div>
+            <span class="radioLabel">Other:</span>
+            <input name="hobbies" type="text" />
+          </div>
+        </div>
+
+        <div class="formItem">
+          <button type="submit">Add record</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer" class="container">
+
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

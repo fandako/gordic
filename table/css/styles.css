@@ -1,0 +1,93 @@
+#navigation {
+  background: #024DA8;
+  color: #FFFCF9;
+  min-height: 4em;
+}
+#navigation .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4em;
+}
+#navigation h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+#navigation a {
+  color: #FFFCF9;
+  margin-left: 15px;
+}
+#navigation a .fas {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.table {
+  border: 1px solid #E6E6E6;
+  margin-top: 1em;
+}
+.table .header {
+  background: #483D3F;
+  color: #FFFCF9;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.table .header, .table .item {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.table .item:nth-child(even) {
+  background: #FFFCF9;
+}
+.table .item:nth-child(odd) {
+  background: #e6e6e6;
+}
+.table .noItems {
+  justify-content: center;
+}
+.table img.avatar {
+  max-width: 30px;
+}
+.table .itemDetail {
+  border-top: 1px solid #483D3F;
+  min-width: 100%;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.table .itemDetail label {
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+#itemTemplate, #itemDetailTemplate {
+  display: none;
+}
+
+.tableWrapper .pagination {
+  justify-content: center;
+  align-items: center;
+}
+.tableWrapper .pagination input {
+  max-width: 3em;
+}
+.tableWrapper .pagination .pageAfterText, .tableWrapper .pagination .pageBeforeText {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+body {
+  background: #FFFCF9;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

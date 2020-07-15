@@ -1,0 +1,19 @@
+@use 'vars';
+
+@use 'navigation';
+
+@use 'table';
+
+@use 'form';
+
+@use 'footer';
+
+body {
+  background: vars.$primary-light;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}

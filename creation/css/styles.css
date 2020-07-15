@@ -1,0 +1,116 @@
+#navigation {
+  background: #024DA8;
+  color: #FFFCF9;
+  min-height: 4em;
+}
+#navigation .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4em;
+}
+#navigation h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+#navigation a {
+  color: #FFFCF9;
+  margin-left: 15px;
+}
+#navigation a .fas {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.table {
+  border: 1px solid #E6E6E6;
+  margin-top: 1em;
+}
+.table .header {
+  background: #C9F0FF;
+  color: #483D3F;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.table .header, .table .item {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.table .item:nth-child(even) {
+  background: #FFFCF9;
+}
+.table .item:nth-child(odd) {
+  background: #e6e6e6;
+}
+.table .noItems {
+  justify-content: center;
+}
+
+#itemTemplate {
+  display: none;
+}
+
+#addForm {
+  /*input[name="submit"]:hover {
+      background: #0071BC;
+      color: white;
+      cursor: pointer;
+  }*/
+}
+#addForm label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+#addForm button[type=submit] {
+  display: block;
+  background: #C9F0FF;
+  border: none;
+  font-weight: bold;
+  padding: 0.5em 0.1em;
+  margin-top: 1em;
+}
+#addForm button[type=submit]:hover {
+  background: #024DA8;
+  color: #FFFCF9;
+  cursor: pointer;
+}
+#addForm input[name=date], #addForm .itemDatepicker {
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+#addForm .itemDatepicker {
+  max-width: 100%;
+}
+#addForm input, #addForm select, #addForm button {
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 0.3em 0.4em;
+  border: 1px solid #E6E6E6;
+}
+#addForm input[type=radio], #addForm input[type=checkbox] {
+  min-width: auto;
+}
+#addForm label.error {
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+#addForm label .required {
+  font-weight: normal;
+  opacity: 0.6;
+}
+
+body {
+  background: #FFFCF9;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
